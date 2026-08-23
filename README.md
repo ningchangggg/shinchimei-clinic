@@ -40,13 +40,14 @@ LINE 綠僅保留給「真正會開啟 LINE」的按鈕（聯絡頁加好友鈕�
 
 ## 線上網址
 
-正式網址：<https://mamibuyama.github.io/shinchimei-clinic/>
+正式網址：<https://new-chimei.com/>
 （GitHub Pages 免費託管，24 小時可瀏覽，不需要開著電腦）
 
-## 更換網域（買了自己的網域後）
+## 更換網域（日後若要再換一次）
 
-假設新網域是 `newchimei.com.tw`，把下面每一處的 `newchimei.com.tw` 換成你實際的網域。
-四個步驟，順序不要顛倒。
+目前已使用自訂網域 `new-chimei.com`（設定於 2026-08-24）。
+若日後要換成另一個網域，依下列四步驟操作，順序不要顛倒。
+以下用 `你的網域` 代表新網域，實際操作時請替換。
 
 ### 步驟 1：到網域註冊商設定 DNS
 
@@ -71,7 +72,7 @@ CNAME 的值結尾有沒有句點都可以，依介面要求。
 DNS 生效通常要 10 分鐘到數小時。可用這個指令確認是否生效：
 
 ```bash
-dig +short newchimei.com.tw
+dig +short 你的網域
 ```
 
 看到那四個 185.199.x.153 就代表好了。
@@ -81,7 +82,7 @@ dig +short newchimei.com.tw
 在專案資料夾執行（把網域換成你的）：
 
 ```bash
-bash scripts/set-domain.sh newchimei.com.tw
+bash scripts/set-domain.sh 你的網域
 ```
 
 這會自動替換全站 37 處 SEO 網址（canonical／og／JSON-LD／sitemap.xml／robots.txt），
@@ -97,7 +98,7 @@ git add -A && git commit -m "切換自訂網域" && git push
 
 前往 <https://github.com/MamiBuyAma/shinchimei-clinic/settings/pages>：
 
-1. **Custom domain** 欄位填入 `newchimei.com.tw`，按 **Save**
+1. **Custom domain** 欄位填入你的網域，按 **Save**
 2. 等待下方出現綠色勾勾「DNS check successful」（DNS 未生效前會顯示錯誤，屬正常）
 3. 憑證簽發完成後，**Enforce HTTPS** 的勾選框才會變成可勾選——勾起來
 
@@ -106,16 +107,16 @@ git add -A && git commit -m "切換自訂網域" && git push
 ### 步驟 4：確認
 
 ```bash
-curl -sI https://newchimei.com.tw | head -1
+curl -sI https://你的網域 | head -1
 ```
 
-出現 `HTTP/2 200` 就完成了。舊的 `mamibuyama.github.io/shinchimei-clinic` 網址
+出現 `HTTP/2 200` 就完成了。舊網址（例如原本的 `使用者名稱.github.io/儲存庫名稱`）
 會自動轉址到新網域，先前分享出去的連結不會失效。
 
 ### 換完之後別忘了
 
 - [ ] LINE 官方帳號、Google 商家、名片、DM 上的網址一併更新
-- [ ] Google Search Console 重新提交 `https://newchimei.com.tw/sitemap.xml`
+- [ ] Google Search Console 重新提交 `https://你的網域/sitemap.xml`
 - [ ] 若已有 Google Analytics，更新資源設定中的網址
 - [ ] `CNAME` 檔請保留在專案裡，刪掉的話自訂網域會失效
 
@@ -167,7 +168,7 @@ git add -A && git commit -m "更新內容" && git push
 
 ## 上線前待辦（已在頁面中預留欄位）
 
-- [ ] 全站網域：買了自有網域後，依上方「更換網域」章節操作（有一鍵腳本）。
+- [x] 全站網域：已切換為 `https://new-chimei.com/`。
 - [ ] LINE 官方帳號：將 `@newchimei` 與 `https://line.me/R/ti/p/@newchimei` 替換為實際 ID 與加好友連結（`contact.html` 與各頁 footer）。
 - [ ] `contact.html`：放入 LINE QR Code 圖片、門診時間、交通資訊、Google 地圖 iframe。
 - [ ] 各服務頁「（待填入）」療程項目：補上實際療程名稱、儀器、價格帶。
