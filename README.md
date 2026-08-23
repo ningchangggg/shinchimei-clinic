@@ -169,7 +169,7 @@ git add -A && git commit -m "更新內容" && git push
 ## 上線前待辦（已在頁面中預留欄位）
 
 - [x] 全站網域：已切換為 `https://new-chimei.com/`。
-- [ ] LINE 官方帳號：將 `@newchimei` 與 `https://line.me/R/ti/p/@newchimei` 替換為實際 ID 與加好友連結（`contact.html` 與各頁 footer）。
+- [x] LINE 官方帳號：已填入實際帳號 `@403lrvck`（加好友連結 https://line.me/R/ti/p/@403lrvck）。
 - [ ] `contact.html`：放入 LINE QR Code 圖片、門診時間、交通資訊、Google 地圖 iframe。
 - [ ] 各服務頁「（待填入）」療程項目：補上實際療程名稱、儀器、價格帶。
 - [ ] 醫師姓名與照片（`doctors.html` 目前僅列資歷，未具名）。
