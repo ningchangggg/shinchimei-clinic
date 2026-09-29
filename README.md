@@ -146,7 +146,7 @@ git add -A && git commit -m "更新內容" && git push
 |---|---|
 | 首頁 | `index.html` |
 | 服務項目總覽 | `services/index.html` |
-| 醫學美容（輪廓拉提／微整注射／光療雷射） | `services/aesthetic-medicine.html` |
+| 醫學美容（雷射光電／微整注射／磨顏治療） | `services/aesthetic-medicine.html` |
 | 婦產科 | `services/obstetrics-gynecology.html` |
 | 家醫科 | `services/family-medicine.html` |
 | 生髮治療 | `services/hair-restoration.html` |
