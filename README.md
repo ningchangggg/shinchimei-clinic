@@ -60,7 +60,7 @@ LINE 綠僅保留給「真正會開啟 LINE」的按鈕（聯絡頁加好友鈕�
 | A | @ | `185.199.109.153` |
 | A | @ | `185.199.110.153` |
 | A | @ | `185.199.111.153` |
-| CNAME | www | `mamibuyama.github.io` |
+| CNAME | www | `ningchangggg.github.io` |
 
 四筆 A 紀錄都要加（GitHub 的四台伺服器，其中一台故障時仍能連線）。
 `@` 代表根網域本身；有些商家寫成空白或網域全名，依該介面的說明填即可。
@@ -96,7 +96,7 @@ git add -A && git commit -m "切換自訂網域" && git push
 
 ### 步驟 3：在 GitHub 後台指定網域
 
-前往 <https://github.com/MamiBuyAma/shinchimei-clinic/settings/pages>：
+前往 <https://github.com/ningchangggg/shinchimei-clinic/settings/pages>：
 
 1. **Custom domain** 欄位填入你的網域，按 **Save**
 2. 等待下方出現綠色勾勾「DNS check successful」（DNS 未生效前會顯示錯誤，屬正常）
